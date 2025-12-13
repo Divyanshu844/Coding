@@ -15,7 +15,7 @@ class Student{
         name=s;
     }
     void setage(int a){
-        if(age<0 || age>100){
+        if(a<0 || a>100){
             cout<<"Invalid age";
             return;
         }
@@ -37,7 +37,7 @@ class Student{
         cout<<roll_number<<endl;
     }
     string get_grade(int pin){
-        if(pin=123)
+        if(pin==123)
         return grade;
 
         return " ";
@@ -52,6 +52,8 @@ int main(){
     S1.setgrade("A+");
     S1.getname();
     S1.getage();
-    
+    //cout<<S1.getroll_number()<<endl;
+    cout<<S1.get_grade(123)<<endl;
+
 
 }

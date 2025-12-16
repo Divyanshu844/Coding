@@ -24,13 +24,15 @@ class Customer{
     void display(){
         cout<<name<<" "<<accound_number<<" "<<balance<<endl;
     }
+
+    //Copy Constructor
     Customer(Customer &B){
         name= B.name;
         accound_number= B.accound_number;
         balance= B.balance;
     }
 };
-int main(){
+int main(){ 
     Customer A1;
     Customer A2("Divyanshu",23,1000);
     Customer A3("Mohit",29);
@@ -39,4 +41,7 @@ int main(){
     A3.display();
     Customer A4(A3);
     A4.display();
+    Customer A5;
+    A5=A3;
+    A5.display();
 }

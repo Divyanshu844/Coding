@@ -18,7 +18,7 @@ class Student : protected Human{
         this->fees=fees;
     }
     void display(){
-        cout<<name<<"age is"<<age<<",weight is"<<weight<<",roll_numer is"<<roll_number<<"and fees is"<<fees<<endl;
+        cout<<name<< "age is"<<age<<",weight is"<< weight<<",roll_numer is"<< roll_number<<"and fees is"<< fees<<endl;
     }
 };
 class Teacher:public Human{

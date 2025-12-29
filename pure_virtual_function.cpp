@@ -3,9 +3,8 @@
 using namespace std;
 class Animal{
     public:
-    virtual void speak(){
-        cout<<"Hello\n";
-    };
+    virtual void speak()=0;
+     
         
 };
     class Dog:public Animal{
@@ -28,7 +27,6 @@ int main(){
     vector<Animal *>animals;
     animals.push_back(new Dog());
     animals.push_back(new Cat());
-    animals.push_back(new Animal());
     animals.push_back(new Dog());
     animals.push_back(new Cat());
 for(int i=0;i<animals.size();i++){

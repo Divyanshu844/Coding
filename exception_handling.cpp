@@ -41,7 +41,7 @@ int main(){
         C1.withdraw(6000);
         C1.deposit(1000);
     }
-    catch(const char *e){
-        cout<<"Exception occured: "<<e<<endl;
+    catch(const runtime_error &e){
+        cout<<"Exception occured: "<<e.what()<<endl;
     }
 }

@@ -22,7 +22,7 @@ class Stack{
         else{
             top++;
             arr[top]=value;
-            cout<<"Pushed"<<value<<"into the stack\n";
+            cout<<"Pushed "<<value<<"into the stack\n";
             flag=0;
         }
     }
@@ -32,7 +32,7 @@ class Stack{
             cout<<"Stack Underflow\n";
         }
         else{
-            cout<<"Popped"<<arr[top]<<"from the stack\n";
+            cout<<"Popped "<<arr[top]<<"from the stack\n";
             top--;
             if(top==-1)
             flag=1;
@@ -66,7 +66,7 @@ int main(){
     S.push(3);
     S.push(2);
     S.push(1);
-    //S.pop(3);
+    S.pop();
     cout<<S.peek()<<endl;
     cout<<S.peek()<<endl;
 }

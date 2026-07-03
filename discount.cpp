@@ -14,7 +14,7 @@ int main(){
        
     }else if(amount>=5000)
     {
-        discount=(amount*15)/100;
+        discount=(amount*20)/100;
         total_discount=amount-discount;
         
     }
